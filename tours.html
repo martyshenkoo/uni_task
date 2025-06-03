@@ -1,24 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <title>Наші тури</title>
+    <title>Туризм — Події миші</title>
     <meta name="author" content="Ірина" />
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .hover-zone li {
+        margin: 10px;
+        padding: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .drag-box {
+        width: 150px;
+        height: 150px;
+        background-color: #cce5ff;
+        text-align: center;
+        line-height: 150px;
+        cursor: grab;
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        border: 2px dashed #339;
+        font-weight: bold;
+      }
+
+      .drag-box.dragging {
+        background-color: #ffdfdf;
+        border-color: red;
+        cursor: grabbing;
+      }
+    </style>
   </head>
   <body>
-    <div class="tour-info">
-      <h2>Популярні тури</h2>
+    <h1>Туристичні напрямки</h1>
 
-      <div class="tour-block">
-        <img src="images/lviv.jpg" alt="Львів" width="150" height="100" />
-        <p><span class="highlight">Львів</span> — культурна столиця України.</p>
-      </div>
+    <ul class="hover-zone">
+      <li>Карпати</li>
+      <li>Львів</li>
+      <li>Одеса</li>
+      <li>Кам'янець-Подільський</li>
+    </ul>
 
-      <div class="tour-block">
-        <img src="images/odesa.jpg" alt="Одеса" width="150" height="100" />
-        <p><span class="highlight">Одеса</span> — місто біля Чорного моря.</p>
-      </div>
-    </div>
+    <div class="drag-box" id="draggable">Перетягни мене</div>
+
+    <script src="drag-hover.js"></script>
   </body>
 </html>
