@@ -5,6 +5,18 @@
     <title>Туризм — Головна</title>
     <meta name="author" content="Ірина" />
     <link rel="stylesheet" href="style.css" />
+    <script>
+      alert('Вітаємо на сайті туризму!');
+      let name = prompt('Як вас звати?');
+      let confirmed = confirm('Чи хочете ви дізнатися про тури?');
+
+      if (confirmed) {
+        alert('Дякуємо, ' + name + '! Переходимо до турів...');
+      } else {
+        alert('Добре, перегляньте наші пропозиції пізніше.');
+      }
+    </script>
+    <script src="script.js" defer></script>
   </head>
   <body bgcolor="#f0f8ff">
     <h1>Туризм — головна сторінка</h1>
