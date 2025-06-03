@@ -5,8 +5,48 @@
     <title>Про нас</title>
     <meta name="author" content="Ірина" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      li.selected {
+        background-color: lightgreen;
+        font-weight: bold;
+      }
+
+      .menu button {
+        margin: 5px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Дізнайтесь більше про наш туристичний сервіс</h1>
+    <h1>Події миші</h1>
+
+    <!-- 1. Використання події миші через атрибут -->
+    <button onclick="alertHandler()">Натисни мене (через атрибут)</button>
+
+    <!-- 2. Призначення функції через властивість -->
+    <button id="secondBtn">Наведи курсор (через властивість)</button>
+
+    <!-- 3. addEventListener з кількома обробниками -->
+    <button id="multiHandlerBtn">Кілька обробників</button>
+
+    <!-- 4. Об'єкт як обробник -->
+    <button id="objBtn">Обробник-об'єкт</button>
+
+    <!-- 5. Список з делегуванням -->
+    <h2>Обери тур</h2>
+    <ul id="tourList">
+      <li>Карпати</li>
+      <li>Одеса</li>
+      <li>Львів</li>
+    </ul>
+
+    <!-- 6. Меню з поведінками -->
+    <h2>Меню дій</h2>
+    <div class="menu" id="menu">
+      <button data-action="start">Старт</button>
+      <button data-action="pause">Пауза</button>
+      <button data-action="end">Завершити</button>
+    </div>
+
+    <script src="events.js"></script>
   </body>
 </html>
