@@ -93,3 +93,57 @@ table > caption {
   color: navy;
   font-weight: bold;
 }
+
+.tour-info {
+  position: relative;
+  padding: 20px;
+  background-color: #e8f0ff;
+  border: 1px solid #ccc;
+}
+
+.tour-block {
+  float: left;
+  width: 45%;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px dashed #aaa;
+  position: relative;
+}
+
+.highlight {
+  color: crimson;
+  font-weight: bold;
+  background-color: #fff0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+a:link {
+  color: green;
+}
+a:visited {
+  color: gray;
+}
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+}
+
+ul li:first-child {
+  font-weight: bold;
+  color: darkblue;
+}
+
+.tour-block::before {
+  content: '🌍 ';
+  font-size: 20px;
+}
+
+.tour-block::after {
+  content: ' ✈️';
+  font-size: 20px;
+}
