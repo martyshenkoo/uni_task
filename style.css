@@ -77,3 +77,19 @@ p.special {
   background-color: #fffbe6;
   padding: 10px;
 }
+
+ul li {
+  font-style: italic;
+  color: darkolivegreen;
+}
+
+h1 + p {
+  border-top: 2px dashed darkcyan;
+  padding-top: 10px;
+}
+
+table > caption {
+  font-size: 20px;
+  color: navy;
+  font-weight: bold;
+}
